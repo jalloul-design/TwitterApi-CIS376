@@ -45,7 +45,6 @@ public class TweetServices
 		
 	// String pattern I got it from Professor videos about rest Api's
 		String pattern = "https?://\\S+";
-		String text = "Twitter Link: https://x.com/";
 		Pattern p = Pattern.compile(pattern);
 		
 		// Created a for loop so that it loops each tweet that is in the link 
