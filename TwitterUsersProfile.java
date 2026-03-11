@@ -1,17 +1,20 @@
 package com.mira.twitterapi;
 
+// Creating a class that will represents the User profile information of a Twitter account 
 public class TwitterUsersProfile
 {
-	private String location; 
-	private String description;
-	private String screen_name;
-	private Long followers_count;
-	private Long friends_count;
+	private String location;  // User Location 
+	private String description; // User Descrption or Bio
+	private String screen_name; // Twitter user account handler
+	private Long followers_count; // Number of followers a user has
+	private Long friends_count; // Number of account a certrain user follows 
 	
-	
+	// Default Constructor for the class
 	  public TwitterUsersProfile() 
 	  {
 	  }
+	  
+	//Getter and setter function for location
 	public String getLocation()
 	{
 		return location;
@@ -22,6 +25,7 @@ public class TwitterUsersProfile
 		this.location = location;
 	}
 	
+	//Getter and setter function for Description 
 	public String getDescription()
 	{
 		return description;
@@ -32,6 +36,7 @@ public class TwitterUsersProfile
 		this.description = description;
 	}
 	
+	//Getter and setter function for User Screen Name
 	public String getScreen_name()
 	{
 		return screen_name;
@@ -41,6 +46,7 @@ public class TwitterUsersProfile
 		this.screen_name = screen_name;
 	}
 	
+	//Getter and setter function for followers count
 	public Long getFollowers_count()
 	{
 		return followers_count; 
@@ -51,6 +57,8 @@ public class TwitterUsersProfile
 		this.followers_count = followers_count;
 	}
 	
+	
+	//Getter and setter function for friends count
 	public Long getFriends_count()
 	{
 		return friends_count;
@@ -61,6 +69,7 @@ public class TwitterUsersProfile
 		this.friends_count = friends_count;
 	}
 	
+	// Constructor used when createing the Twitter User Profile, Make sure all the followinf profile fields are diaplayed. 
 	public TwitterUsersProfile(String location,String description,String screen_name,Long followers_count,Long friends_count)
 	{
 		this.location = location;
